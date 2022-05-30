@@ -5,39 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
     <link rel="stylesheet" href="~/Content/Style/Main.css">
-    @*@Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")*@
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    @*<div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                        <li>@Html.ActionLink("About", "About", "Home")</li>
-                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    </ul>
-                </div>
-            </div>
-        </div>*@
     <div class="header">
         <div class="header_left">
             <img class="header_left_img" src="~/Content/Image/logoTC.png" alt="">
         </div>
         <div class="header_right">
-            <li class="header_right_li"><a href="#">Trang Chủ</a></li>
-             <li class="header_right_li"><a href="#">Mua Ô Tô</a></li>
-            <li class="header_right_li"><a href="#">Mua Xe Máy</a></li>
-            <li class="header_right_li"><a href="#">Mua Xe Tải</a></li>
-            <li class="header_right_li"><a href="#">Tài Khoản</a></li>
+            <li class="header_right_li"><a style="color: black" href="#">Trang Chủ</a></li>
+            <li class="header_right_li"><a style="color: black" href="#">Mua Ô Tô</a></li>
+            <li class="header_right_li"><a style="color: black" href="#">Mua Xe Máy</a></li>
+            <li class="header_right_li"><a style="color: black" href="#">Mua Xe Tải</a></li>
+            <li class="header_right_li"><a style="color: black" href="https://localhost:44334/Login/Login">Tài Khoản</a></li>
             <div class="header_right_sell">
                 <div style="width: 100%; height: 50%;">
                     <img class="header_right_sell_iconsell" src="~/Content/Image/iconSell.png" alt="">
@@ -50,12 +33,13 @@
             </div>
         </div>
     </div>
+    <hr />
 
     <!-- mobile -->
-    <!--<div class="header_mobile">
+    <div class="header_mobile">
         <div class="header_mobile_bar">
             <li class="header_mobile_bar_li"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-        </div>-->
+        </div>
         <!-- <div>
             <li class="header_right_li"><a href="#">Trang Chủ</a></li>
             <li class="header_right_li"><a href="#">Mua Ô Tô</a></li>
@@ -63,20 +47,92 @@
             <li class="header_right_li"><a href="#">Mua Xe Tải</a></li>
             <li class="header_right_li"><a href="#">Tài Khoản</a></li>
         </div> -->
-        <!--<div class="header_mobile_right">
+        <div class="header_mobile_right">
             <img class="header_left_img" src="Image/logoTC.png" alt="">
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>-->
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    <!-- <nav class="navbar">
+        <div class="content">
+          <div class="logo">
+            <a href="#">LeQuangDuy</a>
+          </div>
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+                <i class="fa-solid fa-ban"></i>
+            </div>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="icon menubtn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+      <div class="banner"></div>
+      <div class="about">
+        <div class="content">
+          <div class="title">Responsive Sticky Navigation Menu Bar on Scroll using HTML CSS & JavaScript</div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo impedit atque consequatur! Iusto distinctio temporibus repellendus labore odit adipisci harum ipsa beatae natus, eum eius, hic aperiam odio! Quasi molestias magnam illo voluptatem iusto ipsam blanditiis, tempore cumque reiciendis quaerat vero tenetur, sequi dolores libero voluptas vitae voluptate placeat dolorum modi ipsa nisi repellat facilis aliquam asperiores. Aut nam repellat harum quas saepe dolorum voluptates ratione, itaque consectetur explicabo a facilis rem mollitia maxime repudiandae fuga reprehenderit, odio cum incidunt labore molestiae quis non perferendis ipsam. Illum, in, deserunt. Ipsa.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit hic excepturi nobis id, eos dolor libero, nam assumenda, at culpa quos perspiciatis ratione ea modi! Natus sapiente a, explicabo sit quisquam eligendi esse provident eos enim doloremque blanditiis aut placeat veniam, libero nostrum quae. Ipsam, iste reprehenderit minima accusantium illo dolorem recusandae, ipsa autem quidem reiciendis a mollitia sit tenetur.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint doloremque perspiciatis voluptate ducimus reiciendis rem expedita voluptatibus dicta harum, quo, aspernatur maiores possimus officia quod? Aliquid molestiae illo sequi, tempora perferendis at incidunt nam porro voluptatibus, iste aperiam blanditiis adipisci ducimus repellendus distinctio nostrum ipsum! Voluptas facilis cum, atque tempora magnam beatae sequi! Doloribus expedita, cupiditate quo quod nemo aliquam, mollitia cum ea nam ullam soluta temporibus! Repudiandae incidunt consequatur distinctio deleniti obcaecati sit facilis unde, quisquam veniam ad doloribus!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet veniam error deleniti cum beatae non assumenda illum est dolores, possimus suscipit quibusdam eveniet id fuga dolore unde modi, sapiente voluptas. Mollitia veritatis explicabo cumque enim quia voluptates provident totam perferendis excepturi animi assumenda optio minus laudantium eveniet possimus amet blanditiis dolore in fuga atque, earum officia tempora quam similique est.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ad sunt distinctio quidem incidunt cupiditate sequi deleniti, corrupti officia nam veritatis facilis veniam dolorum enim nisi ipsum dolor rem! Doloribus, eaque odit voluptatem iste laboriosam provident facere quo. Cum repellat pariatur, error ratione repellendus nisi quam culpa tempora facere in atque nesciunt, magni est aliquid unde soluta optio! Dolore pariatur, quaerat quo in cupiditate deleniti exercitationem. Facilis suscipit corporis unde aut minima nihil, eum molestias itaque, tenetur, beatae ipsa at!</p>
+        </div>
+      </div> -->
+    @RenderBody()
+    <div class="container body-content">
+        @RenderSection("containerFluid", required: false)
+        <footer>
+            <div class="content">
+                <div class="left box">
+                    <div class="upper">
+                        <div class="topic">Về chúng tôi</div>
+                        <p>Đây được xác định là một trong những sản phẩm chiến lược của Xe Tốt ngay từ khi hình thành và phát triển. Khách hàng có thể đăng tin bán xe máy, ô tô, xe tải mới và xe ô tô đã qua sử dụng chính chủ trên website.</p>
+                    </div>
+                    <div class="lower">
+                        <div class="topic"> Liên hệ</div>
+                        <div class="phone">
+                            <a href="#"><i class="fas fa-phone-volume"></i>0909xxxxxx</a>
+                        </div>
+                        <div class="email">
+                            <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="middle box">
+                    <div class="topic">Dịch vụ</div>
+                    <div><a href="#">Xe siêu đẹp</a></div>
+                    <div><a href="#">Xe siêu đẹp</a></div>
+                    <div><a href="#">Xe siêu đẹp</a></div>
+                    <div><a href="#">Xe siêu đẹp</a></div>
+                    <div><a href="#">Xe siêu đẹp</a></div>
+                    <div><a href="#">Xe siêu đẹp</a></div>
+                </div>
+                <div class="right box">
+                    <div class="topic">NDTGroup</div>
+                    <form action="#">
+                        <input type="text" placeholder="Enter email address">
+                        <input type="submit" name="" value="Send">
+                        <div class="media-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="bottom">
+                <p>Copyright © 2022 <a href="#">NDTGroup</a> Degisn by All</p>
+            </div>
+        </footer>
+    </div>
+
+    @*  @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)*@
 </body>
 </html>
