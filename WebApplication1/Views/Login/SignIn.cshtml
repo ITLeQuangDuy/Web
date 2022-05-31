@@ -1,0 +1,50 @@
+﻿@model IEnumerable<WebApplication1.RouteConfig>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link href="~/fonts/fontawesome-free-6.1.1-web/css/all.min.css" rel="stylesheet" />
+    <link href="~/Content/Style/Login/SignIn.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <form action="" id="form-login">
+            <h1 class="form-heading">Đăng ký</h1>
+            <div class="form-group">
+                <i class="far fa-user"></i>
+                <input type="text" class="form-input" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <i class="far fa-user"></i>
+                <input type="text" class="form-input" placeholder="Số điện thoại">
+            </div>
+            <div class="form-group">
+                <i class="far fa-user"></i>
+                <input type="text" class="form-input" placeholder="Địa chỉ">
+            </div>
+            <div class="form-group">
+                <i class="fas fa-key"></i>
+                <input type="password" class="form-input" placeholder="Mật khẩu">
+                <div id="eye">
+                    <i class="far fa-eye"></i>
+                </div>
+            </div>
+            <div class="form-group">
+                <i class="fas fa-key"></i>
+                <input type="password" class="form-input" placeholder="Nhập lại mật khẩu">
+                <div id="eye">
+                    <i class="far fa-eye"></i>
+                </div>
+            </div>
+            <input type="submit" value="Đăng ký" class="form-submit">
+        </form>
+    </div>
+</body>
+</html>

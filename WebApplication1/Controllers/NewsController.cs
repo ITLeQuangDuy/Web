@@ -6,19 +6,12 @@ using System.Web.Mvc;
 
 namespace WebApplication1.Controllers
 {
-    public class LoginController : Controller
+    public class NewsController : Controller
     {
-        // GET: Login
-        public ActionResult Login()
-        {
-            return View();
-        }
-
-        public ActionResult SignIn()
+        // GET: News
+        public ActionResult News()
         {
             return View();
         }
     }
-
-
 }
